@@ -1,9 +1,10 @@
 name: "Code scanning"
 
 on:
-  schedule:
-    # Friday 8AM UTC / Friday 5PM JST
-    - cron: '0 8 * * 5'
+  workflow_dispatch:
+  # schedule:
+  #   # Friday 8AM UTC / Friday 5PM JST
+  #   - cron: '0 8 * * 5'
 
 jobs:
   CodeQL-Build:
